@@ -1,0 +1,19 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "serve": "npx live-server public",
+    "init:css": "npx tailwindcss-cli@latest init",
+    "build:css": "npx tailwindcss-cli@latest build src/tailwind.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocla Food</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
+</head>
+<!-- Grids 6:13 -->
+<body class="font-main text-gray-600">
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/" class="hover:text-gray-700 transition">Chocla Food</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden burger">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </div>
+        </div>
+        <ul class="hidden mb-3 md:mt-6 md:block">
+          <li class="text-gray-700 font-bold">
+            <a href="#" class="px-4 py-2 flex justify-end border-r-4 border-primary">
+              <span>Home</span>
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 flex justify-end border-r-4 border-transparent">
+              <span>About</span>
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="px-4 py-2 flex justify-end border-r-4 border-transparent">
+              <span>Contact</span>
+              <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="md:col-span-2 bg-gray-100 px-16 pt-6 pb-10">
+      <div class="flex justify-around md:justify-end mb-6">
+        <a href="#" class="btn-primary">Log in</a>
+        <a href="#" class="btn-primary md:ml-3">Sign up</a>
+      </div>
+
+      <header>
+        <h2 class="text-gray-700 text-3xl md:text-6xl font-semibold">Recipes</h2>
+        <h3 class="text-lg md:text-2xl font-semibold">For Chocolovers</h3>
+      </header>
+
+      <div>
+        <h4 class="recipe-title">Latest Recipes</h4>
+
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+          <!-- cards go here -->
+          <div class="card">
+            <img src="img/stew.jpg" alt="stew" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">5 Bean Chili Stew</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">Choclacode</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>25 Mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/noodles.jpg" alt="noodles" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">Veg Noodles</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">Saadat</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>20 Mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/curry.jpg" alt="curry" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">Tofu Curry</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">retry-samurai</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>35 Mins</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="recipe-title">Most Popular</h4>
+
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+          <div class="card">
+            <img src="img/noodles.jpg" alt="noodles" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">Veg Noodles</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">Saadat</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>20 Mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/curry.jpg" alt="curry" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">Tofu Curry</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">retry-samurai</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>35 Mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/stew.jpg" alt="stew" class="w-full h-48 rounded-t-md object-cover">
+            <div class="m-2 p-2">
+              <span class="font-bold text-lg">5 Bean Chili Stew</span>
+              <div class="text-gray-500 text-sm text-right">
+                Recipe by <span class="text-gray-600 text-base">Choclacode</span>
+              </div>
+            </div>
+            <div class="badge">
+              <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>25 Mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-10">
+        <div class="secondary btn transform hover:scale-125 hover:opacity-75">
+          Load more
+        </div>
+      </div>    
+    </main>
+  </div>
+</body>
+
+</html>

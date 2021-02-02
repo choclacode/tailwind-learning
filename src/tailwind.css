@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.secondary {
+  @apply bg-secondary-100 text-secondary-200;
+}
+.transit {
+  @apply transition ease-out duration-500;
+}
+.shadow-hover {
+  @apply shadow hover:shadow-md transit;
+}
+.recipe-title {
+  @apply font-bold mt-12 pb-2 border-b border-gray-200;
+}
+.card {
+  @apply bg-white rounded-md inline-block relative shadow-hover;
+}
+.badge {
+  @apply secondary text-xs uppercase
+  font-bold rounded-full p-2 mt-2 ml-2 absolute top-0
+  opacity-25 hover:opacity-90 transit cursor-default;
+}
+.btn {
+  @apply px-4 py-2 rounded-full cursor-pointer text-sm uppercase font-bold
+    shadow-hover tracking-wider;
+}
+.btn-primary {
+  @apply btn text-primary border-primary border-2
+    hover:bg-primary hover:text-white transit;
+}
