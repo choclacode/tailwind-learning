@@ -4,16 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node .",
+    "start": "npx concurrently \"npm:serve\" \"npm:watch:css\"",
     "serve": "npx live-server public",
-    "init:css": "npx tailwindcss-cli@latest init",
-    "build:css": "npx tailwindcss-cli@latest build src/tailwind.css -o public/styles.css"
+    "init:css": "npx tailwindcss init",
+    "watch:css": "npx tailwindcss -i src/tailwind.css -o public/styles.css -w"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "tailwindcss": "^2.0.2"
-  }
+  "license": "ISC"
 }
